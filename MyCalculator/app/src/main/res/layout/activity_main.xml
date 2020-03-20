@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtFirstValue"
+        android:layout_width="302dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="500dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="Enter first value"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtSecondValue"
+        android:layout_width="299dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Enter second value"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/txtFirstValue"
+        app:layout_constraintStart_toStartOf="@+id/txtFirstValue"
+        app:layout_constraintTop_toBottomOf="@+id/txtFirstValue" />
+
+    <Button
+        android:id="@+id/btnAddition"
+        android:layout_width="287dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="40dp"
+        android:onClick="performAddition"
+        android:text="Add"
+        app:layout_constraintEnd_toEndOf="@+id/txtSecondValue"
+        app:layout_constraintStart_toStartOf="@+id/txtSecondValue"
+        app:layout_constraintTop_toBottomOf="@+id/txtSecondValue" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="266dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="48dp"
+        android:text="TextView"
+        android:textColor="#3F51B5"
+        app:layout_constraintEnd_toEndOf="@+id/btnAddition"
+        app:layout_constraintStart_toStartOf="@+id/btnAddition"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddition" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
